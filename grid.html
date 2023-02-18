@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Зарегистрируйся на котференцию</title>
+</head>
+<body>
+    <main class="container">
+        <section class="profile">
+        <h2>Анкета посетителя котференции</h2>
+      
+        <form class="profile-form" action="https://httpbin.org/get">
+          <div class="photo">
+            Тут будет фото
+          </div>
+      
+          <div class="name">
+            <label for="name">Кличка</label><br>
+            <input type="text" class="input" name="кличка" id="name">
+          </div>
+
+          <div class="breed">
+            <label for="breed">Порода</label><br>
+            <input type="text" class="input" name="Порода" id="breed">
+          </div>
+      
+          <div class="place">
+            <label for="place">Любимое место для лежания</label><br>
+            <input type="text" class="input" name="Любимое место для лежания" id="place">
+          </div>
+
+          <div class="about">
+            <label for="about">О себе</label><br>
+            <textarea rows="4" class="input" name="about" id="about"></textarea>
+          </div>
+      
+          <div class="food">
+            <label for="food">Любимое лакомство</label>
+          </div>
+      
+          <div class="chicken">
+            <label for="chicken">
+              <input id="chicken" name="Любимое блюдо" type="checkbox" value="курочка" checked="checked">
+              Курочка
+            </label>
+          </div>
+
+          <div class="duck">
+            <label for="duck">
+              <input id="duck" name="любимое блюдо" type="checkbox" value="уточка">
+              Курочка
+            </label>
+          </div>
+
+          <div class="turkey">
+            <label for="turkey">
+              <input id="turkey" name="любимое блюдо" type="checkbox" value="индеечка">
+              Курочка
+            </label>
+          </div>
+
+          <div class="other">
+            <label for="other">
+              <input id="other" name="любимое блюдо" type="checkbox" value="другое">
+              Курочка
+            </label>
+          </div>
+          <div class="submit">
+            <label for="send">
+              <input id="submit" name="send" type="submit" value="Подать заявку" class="submit-btn">
+              
+            </label>
+          </div>
+        </form>
+      </section>
+    
+    </main>
+    
+</body>
+</html>

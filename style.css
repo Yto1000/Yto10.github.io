@@ -1,32 +1,92 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #a6a6d8;
 }
 
 .container {
-height: 539px;
-width: 1366px;
-margin: 0 auto ;
-display: flex;
+  width: 1040px;
+  margin: 0 auto;
 }
 
-.section-title {
-font-family: Arial;
+h2 {
+  color: #545454;
 }
 
-.news-img-column {
-display: flex;
-gap: 10px;
+.input {
+  width: 100%;
 }
 
-.h6 {
-font-size: 16px;
-color: #444240;
-font-family: Roboto;
+.profile {
+  width: 950px;
+  margin: 0 auto;
 }
 
-.news-img-vertical {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.profile-form {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+  "photo name name name name"
+  "photo breed breed place place"
+  "photo about about about about"
+  "photo food food food food"
+  "photo chicken duck turkey other"
+  "photo submit submit submit submit"
+  ;
+  padding: 15px;
+  gap: 15px;
+}
+
+.photo {
+  grid-area: photo;
+  width: 284px;
+  background-color: #eeeeff;
+  border: 1px solid #a9a9a9;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  grid-area: name;
+}
+
+.breed {
+  grid-area: breed ;
+}
+
+.place {
+  grid-area: place;
+}
+
+.about {
+  grid-area: about;
+}
+
+.food {
+  grid-area: food;
+}
+
+.chicken {
+  grid-area: chicken;
+}
+
+.duck {
+  grid-area: duck;
+}
+
+.turkey {
+  grid-area: turkey;  
+}
+
+.other {
+  grid-area: other;
+}
+
+.submit {
+  grid-area: submit;
 }
