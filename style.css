@@ -1,0 +1,27 @@
+.page-container {
+	width: 1980px;
+	height: 2000px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"main main main main"
+		"main main main main"
+		"footer footer footer"
+	; 
+}
+
+.header {
+	grid-area: header;
+	background-color: #999999;
+}
+
+.main {
+	 grid-area: main;
+	 background-color: #999999;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #999999;
+}
